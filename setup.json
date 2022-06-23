@@ -26,6 +26,9 @@
         "aiida.parsers": [
             "aurora = aiida_aurora.parsers:DiffParser"
         ],
+        "aiida.schedulers": [
+            "tomato = aiida_aurora.scheduler:TomatoScheduler"
+        ],
         "aiida.cmdline.data": [
             "aurora = aiida_aurora.cli:data_cli"
         ]
