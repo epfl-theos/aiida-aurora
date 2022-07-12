@@ -270,7 +270,7 @@ class TomatoScheduler(Scheduler):
             # the command was 'ketchup status {jobid} && ...'
             this_job = None
             for raw_line in jobdata_raw:
-                line = list(map(str.strip, s.split('=')))  # split line at '='
+                line = list(map(str.strip, raw_line.split('=')))  # split line at '='
                 if 'jobid' in line[0]:
                     if this_job:
                         job_list.append(this_job)  # append previous job read
